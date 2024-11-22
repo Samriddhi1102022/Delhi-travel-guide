@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Guidance</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+     <style>
+        /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background: #007bff;
+    color: white;
+}
+
+form {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#guidanceResult {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+     </style>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    <script>
+       async function generateGuidanceWithAI() {
+    const interests = document.getElementById("interests").value;
+    const educationLevel = document.getElementById("educationLevel").value;
+    const careerGoals = document.getElementById("careerGoals").value;
+
+    if (!interests || !educationLevel || !careerGoals) {
+        document.getElementById("guidanceResult").innerHTML = `
+            <p class="text-danger">Please fill in all fields to get guidance.</p>
+        `;
+        return;
+    }
+
+    const apiKey = "your_openai_api_key"; // Replace with your OpenAI API key
+    const prompt = `
+        I have the following details:
+        - Interests: ${interests}
+        - Education Level: ${educationLevel}
+        - Career Goals: ${careerGoals}
+
+        Based on these, generate a personalized career guidance message with recommendations for relevant courses, internships, and career opportunities.
+    `;
+
+    try {
+        const response = await fetch("https://api.openai.com/v1/completions", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${apiKey}`,
+            },
+            body: JSON.stringify({
+                model: "text-davinci-003", // Use GPT-4 or GPT-3.5 depending on your subscription
+                prompt: prompt,
+                max_tokens: 200,
+            }),
+        });
+
+        const data = await response.json();
+        const guidanceMessage = data.choices[0].text;
+
+        // Display AI-generated guidance
+        document.getElementById("guidanceResult").innerHTML = `<p>${guidanceMessage}</p>`;
+    } catch (error) {
+        console.error("Error generating guidance with AI:", error);
+        document.getElementById("guidanceResult").innerHTML = `
+            <p class="text-danger">An error occurred while generating guidance. Please try again later.</p>
+        `;
+    }
+}
+
+    </script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Student Careers</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <button type="button" class="btn btn-primary w-100" onclick="generateGuidanceWithAI()">Get Guidance</button> -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Personalized Guidance</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Personalized Career Guidance</h1>
+        <p>Let us help you find the best career path tailored to your goals.</p>
+    </header>
+
+    <!-- Guidance Form -->
+    <section class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <form id="guidanceForm" class="p-4 border rounded bg-light">
+                    <div class="mb-3">
+                        <label for="interests" class="form-label">What are your interests?</label>
+                        <input type="text" class="form-control" id="interests" placeholder="e.g., Coding, Design, Teaching">
+                    </div>
+                    <div class="mb-3">
+                        <label for="educationLevel" class="form-label">Education Level</label>
+                        <select id="educationLevel" class="form-select">
+                            <option value="" disabled selected>Select your education level</option>
+                            <option value="10th">10th Grade</option>
+                            <option value="12th">12th Grade</option>
+                            <option value="Diploma">Diploma</option>
+                            <option value="Undergraduate">Undergraduate</option>
+                            <option value="Postgraduate">Postgraduate</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="careerGoals" class="form-label">What are your career goals?</label>
+                        <textarea class="form-control" id="careerGoals" rows="3" placeholder="e.g., Become a software developer"></textarea>
+                    </div>
+                    <!-- <button type="button" class="btn btn-primary w-100" onclick="generateGuidance()">Get Guidance</button> -->
+                    <button type="button" class="btn btn-primary w-100" onclick="generateGuidanceWithAI()">Get Guidance</button>
+
+                </form>
+            </div>
+        </div>
+        <div id="guidanceResult" class="mt-4 text-center"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Student Careers Portal. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
