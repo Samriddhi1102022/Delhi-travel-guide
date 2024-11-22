@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delhi Markets</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="nav-footer-style.css">
+  <link rel="stylesheet" href="market.css">
+ 
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo "><span>Apna</span>Delhi</a>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="market.html" class="logo active">MARKET</a></li>
+        <li class="nav-item"><a href="parks.html">PARKS & GARDENS</a></li>
+        <li class="nav-item"><a href="temple.html">TEMPLE</a></li>
+        <li class="nav-item"><a href="museum.html">MUSEUM</a></li>
+        <li class="nav-item"><a href="food.html">FOOD</a></li>
+        <li class="nav-item"><a href="malls.html">MALLS</a></li>
+        <li class="nav-item"><a href="contact.html" >CONTACT US</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="image"></div>
+  <h1 class="name">Popular Delhi Markets</h1>
+
+  <div class="container">
+    <!-- Card for Janpath Market -->
+    <div class="card" onclick="showBox('janpathBox')">
+      <img src="images/janpath-market.jpg" alt="Janpath Market">
+      <div class="card-content">
+        <h3 class="market-name">Janpath Market</h3>
+        <p class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <a href="https://www.google.com/maps/place/Janpath+Market,+New+Delhi" target="_blank"
+            rel="noopener noreferrer" style="text-decoration: none;">
+            Janpath Market, New Delhi
+          </a>
+        </p>
+        <p class="metro-station">
+          <i class="fas fa-subway"></i> Nearest Metro: Janpath
+        </p>
+
+
+
+
+      </div>
+    </div>
+
+    <!-- Card for Chandni Chowk Market -->
+    <div class="card" onclick="showBox('chandniChowkBox')">
+      <img src="images/chandanichawk.jpg" alt="Chandni Chowk Market">
+      <div class="card-content">
+        <h3 class="market-name">Chandni Chowk</h3>
+        <p class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <a href="https://www.google.com/maps/place/Chandni+Chowk,+New+Delhi" target="_blank" rel="noopener noreferrer"
+            style="text-decoration: none;">
+            Chandni Chowk, New Delhi
+          </a>
+        </p>
+
+
+        <p class="metro-station"><i class="fas fa-subway"></i> Nearest Metro: Chandni Chowk</p>
+      </div>
+    </div>
+
+    <!-- Card for Dilli Haat -->
+    <div class="card" onclick="showBox('dilliHaatBox')">
+      <img src="images/DILLIHAAT.webp" alt="Dilli Haat">
+      <div class="card-content">
+        <h3 class="market-name">Dilli Haat</h3>
+        <p class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <a href="https://www.google.com/maps/place/Dilli+Haat,+South+Delhi" target="_blank" rel="noopener noreferrer"
+            style="text-decoration: none;">
+            Dilli Haat, South Delhi
+          </a>
+        </p>
+
+        <p class="metro-station"><i class="fas fa-subway"></i> Nearest Metro: Dilli Haat</p>
+      </div>
+    </div>
+
+
+    <!-- Card for Lajpat Nagar Market -->
+    <div class="card" onclick="showBox('lajpatNagarBox')">
+      <img src="images/LAJPATH.jpeg" alt="Lajpat Nagar Market">
+      <div class="card-content">
+        <h3 class="market-name">Lajpat Nagar </h3>
+        <p class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <a href="https://www.google.com/maps/place/Lajpat+Nagar,+New+Delhi" target="_blank" rel="noopener noreferrer"
+            style="text-decoration: none;">
+            Lajpat Nagar , New Delhi
+          </a>
+        </p>
+
+        <p class="metro-station"><i class="fas fa-subway"></i> Nearest Metro: Lajpat Nagar</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Card for Sarojini Market -->
+    <div class="card" onclick="showBox('sarojiniBox')">
+      <img src="images/Sarojini-market.webp" alt="Sarojini Market">
+      <div class="card-content">
+        <h3 class="market-name">Sarojini Market</h3>
+        <p class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <a href="https://www.google.com/maps/place/South+West+Delhi,+New+Delhi" target="_blank"
+            rel="noopener noreferrer" style="text-decoration: none;">
+            South West Delhi, New Delhi
+          </a>
+        </p>
+
+        <p class="metro-station"><i class="fas fa-subway"></i> Nearest Metro: Sarojini Nagar</p>
+      </div>
+    </div>
+
+    <!-- Card for Khan Market -->
+    <div class="card" onclick="showBox('khanMarketBox')">
+      <img src="images/KHAN_MARKET.jpg" alt="Khan Market">
+      <div class="card-content">
+        <h3 class="market-name">Khan Market</h3>
+        <p class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <a href="https://www.google.com/maps/place/Khan+Market,+New+Delhi" target="_blank" rel="noopener noreferrer"
+            style="text-decoration: none;">
+            Khan Market, New Delhi
+          </a>
+        </p>
+
+        <p class="metro-station"><i class="fas fa-subway"></i> Nearest Metro: Khan Market</p>
+      </div>
+    </div>
+
+    <!-- Card for Gaffar Market -->
+    <div class="card" onclick="showBox('gaffarMarketBox')">
+      <img src="images/GAFFAR_MARKET.jpg" alt="Gaffar Market">
+      <div class="card-content">
+        <h3 class="market-name">Gaffar Market</h3>
+        <p class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <a href="https://www.google.com/maps/place/Gaffar+Market,+Karol+Bagh,+New+Delhi" target="_blank"
+            rel="noopener noreferrer" style="text-decoration: none;">
+            Gaffar Market, New Delhi
+          </a>
+        </p>
+
+        </p>
+
+        <p class="metro-station"><i class="fas fa-subway"></i> Nearest Metro: Karol Bagh</p>
+      </div>
+    </div>
+
+    <!-- Card for Palika Market -->
+    <div class="card" onclick="showBox('palikaMarketBox')">
+      <img src="images/PALIKA.jpg" alt="Palika Baazar">
+      <div class="card-content">
+        <h3 class="market-name">Palika Baazar</h3>
+        <p class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <a href="https://www.google.com/maps/place/Palika+Bazaar,+New+Delhi" target="_blank" rel="noopener noreferrer"
+            style="text-decoration: none;">
+            Palika Bazaar,Cannaught Place
+          </a>
+        </p>
+
+        <p class="metro-station"><i class="fas fa-subway"></i> Nearest Metro: Rajiv Chawk</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Card for Mehar Chand Market -->
+    <div class="card" onclick="showBox('MeherChandBox')">
+      <img src="images/meherchandd.jpg" alt="Meher Baazar">
+      <div class="card-content">
+        <h3 class="market-name">Mehar Chand Market</h3>
+        <p class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <a href="https://www.google.com/maps/place/Meher+Chand+Market,+New+Delhi" target="_blank"
+            rel="noopener noreferrer" style="text-decoration: none;">
+            Meher Chand Market, New Delhi
+          </a>
+        </p>
+
+        <p class="metro-station"><i class="fas fa-subway"></i> Nearest Metro: Rajiv Chawk</p>
+      </div>
+    </div>
+
+    <!-- Card for Meena Bazaar -->
+    <div class="card" onclick="showBox('MeenaBazaarBox')">
+      <img src="images/meenabaazar.jpg" alt="Meena Bazaar">
+      <div class="card-content">
+        <h3 class="market-name">Meena Bazaar</h3>
+        <p class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <a href="https://www.google.com/maps/place/Meena+Bazaar,+Delhi" target="_blank" rel="noopener noreferrer"
+            style="text-decoration: none;">
+            Meena Bazaar, Delhi
+          </a>
+        </p>
+
+        <p class="metro-station"><i class="fas fa-subway"></i> Nearest Metro: Jama Masjid</p>
+      </div>
+    </div>
+    <!-- Card for Chor Bazaar -->
+    <div class="card" onclick="showBox('chorbazaarBox')">
+      <img src="images/chorbaazar.webp" alt="Chor Bazaar ">
+      <div class="card-content">
+        <h3 class="market-name">Chor Bazaar </h3>
+        <p class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <a href="https://www.google.com/maps/place/Delhi+Chor+Bazaar,+New+Delhi" target="_blank"
+            rel="noopener noreferrer" style="text-decoration: none;">
+            Chor Bazaar, New Delhi
+          </a>
+        </p>
+
+        </p>
+
+        <p class="metro-station"><i class="fas fa-subway"></i> Nearest Metro: Jama Masjid</p>
+      </div>
+    </div>
+    <!-- Card for Paharganj -->
+    <div class="card" onclick="showBox('paharganjBox')">
+      <img src="images/paharganj.webp" alt="Paharganj ">
+      <div class="card-content">
+        <h3 class="market-name">Paharganj </h3>
+        <p class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <a href="https://www.google.com/maps/place/Paharganj,+New+Delhi,+Delhi" target="_blank"
+            rel="noopener noreferrer" style="text-decoration: none;">
+            Paharganj, New Delhi
+          </a>
+
+        </p>
+
+        <p class="metro-station"><i class="fas fa-subway"></i> Nearest Metro: RK Ashram Marg </p>
+      </div>
+    </div>
+
+
+    <!-- Modal Box for Janpath Market -->
+    <div id="janpathBox" class="box">
+      <h2>Janpath Market</h2><br>
+      <p>For bargain shoppers, Janpath Market is not to be missed. Located near Connaught Place, this long outdoor
+        street market offers everything from clothing to home goods at extremely affordable rates. Be prepared to sift
+        through piles of items to uncover great finds. If you have the time, walk the entire length of the market to get
+        the full experience. Janpath has a youthful vibe, with rows of street stalls selling funky T-shirts, printed
+        fabric, traditional embroidered footwear called juttis, and more.
+
+        Don't be afraid to dig deep and haggle to get the best deals here. The crowds get thick on weekends, so try to
+        visit Janpath Market during the week if possible. You'll surely leave with bags full of budget-friendly buys.
+      </p>
+      <br>
+      <li><strong>Location:</strong> Near Connaught Place</li>
+      <li><strong>Opening Hours:</strong> Daily until around 9 P.M.</li>
+      <button class="close-btn" onclick="closeBox('janpathBox')">Close</button>
+    </div>
+
+    <!-- Modal Box for Chandni Chowk Market -->
+    <div id="chandniChowkBox" class="box">
+      <h2>Chandni Chowk</h2><br>
+      <p>Chandni Chowk is Delhi's iconic historical market, located in the Old Delhi area. Dating back to the
+        17th-century Mughal era, this densely crowded bazaar captures the essence of authentic Indian street shopping.
+        The chaotic maze of narrow alleys is filled with food stalls emitting mouth-watering aromas, tiny shops
+        overflowing with vibrant saris, and electrical wires hanging overhead.</p>
+      <p>Chandni Chowk is primarily known for its wholesale clothing and textile stores, but it also offers leather
+        goods, bicycles, paper products, toys, jewellery, and more. Be sure to sharpen your haggling skills before
+        visiting, as bargaining is the norm here. Don't miss stopping at the famous Paranthe Wali Gali for some
+        delicious stuffed flatbreads. Chandni Chowk is sensory overload at its finest!</p><br>
+      <ul>
+        <li><strong>Location:</strong> Near Old Delhi Railway Station.</li>
+        <li><strong>Opening Hours:</strong> Daily until around 8 P.M.</li>
+
+      </ul>
+
+      <button class="close-btn" onclick="closeBox('chandniChowkBox')">Close</button>
+    </div>
+
+
+    <!-- Modal Box for Dilli Haat -->
+    <div id="dilliHaatBox" class="box">
+      <h2>Dilli Haat</h2><br>
+      <p>For a more orderly and air-conditioned bazaar experience, head to Dilli Haat in Delhi. This spacious open-air
+        market was created by the Delhi Tourism Authority to showcase handicrafts and cuisines from all over India. The
+        vendors rotate every two weeks, giving shoppers an ever-changing selection. Wander through the stalls, browsing
+        colourful textiles, ornate jewellery, wooden toys, horn crafts, and more.
+
+        After working up an appetite, grab some authentic regional dishes like Hyderabadi biryani or Goan prawn curry
+        from the food stalls. With cultural performances held here most evenings, Dilli Haat is a great place to soak up
+        India's incredible diversity all in one place. Don't forget to bargain!</p><br>
+      <ul>
+        <li><strong>Location:</strong> Commercial centres of South Delhi, opposite INA market.</li>
+        <li><strong>Opening Hours:</strong> Daily until around 10 P.M.</li>
+
+      </ul>
+      <button class="close-btn" onclick="closeBox('dilliHaatBox')">Close</button>
+    </div>
+
+    <!-- Modal Box for Lajpat Nagar Market -->
+    <div id="lajpatNagarBox" class="box">
+      <h2>Lajpat Nagar Market</h2>
+      <br>
+      <p>Located in South Delhi, Lajpat Nagar Central Market is a bustling complex of shops organised neatly into
+        sections: housewares, footwear, textiles, jewellery, clothing, and more. Unlike the chaotic bazaars of Old
+        Delhi, Lajpat Nagar has a more organised feel, with stores lining the indoor corridors. Shoppers will find
+        reasonably priced saris, kurtis, home linens, brassware, and sweets at fixed rates here.
+
+        Be sure to pop into Anokhi and Fabindia for high-quality textiles and block-printed clothing. For traditional
+        bridalwear, Ritu Kumar is a great stop. Refuel with aloo chaat, chole bhature, or kulfi from one of the street
+        food vendors lining the outer rim. Lajpat Nagar Market offers one-stop shopping for both apparel and housewares.
+      </p>
+      <br>
+      <ul>
+        <li><strong>Location:</strong> Commercial centres of South Delhi, opposite INA market.</li>
+        <li><strong>Opening Hours:</strong> 10.00 am to 9.00 pm.</li>
+
+      </ul>
+      <button class="close-btn" onclick="closeBox('lajpatNagarBox')">Close</button>
+    </div>
+
+    <!-- Modal Box for Sarojini Market -->
+    <div id="sarojiniBox" class="box">
+      <h2>Sarojini Market</h2><br>
+
+      <p>No shopaholic's guide to Delhi is complete without Sarojini Nagar Market, one of the city's most renowned
+        budget shopping destinations. This sprawling complex of street stalls is packed with trendy apparel and
+        accessories priced unbelievably low. Be prepared to dig through heaps of clothing to uncover hidden gems.
+        T-shirts here can cost as little as ₹300-500, while dresses and jeans typically go for ₹600-900. You'll also
+        find a terrific selection of imitation jewellery, handbags, and shoes.
+
+        Visit mid-week to avoid the worst crowds. With thousands of vendors peddling such amazing deals, Sarojini Nagar
+        Market truly feels like a shopper's paradise. Just be sure to polish up those bargaining skills before hitting
+        the stalls!</p>
+      <br>
+      <ul>
+        <li><strong>Location:</strong> South West Delhi</li>
+        <li><strong>Opening Hours:</strong> 10:00 am to 9:00 pm.</li>
+
+      </ul>
+      <button class="close-btn" onclick="closeBox('sarojiniBox')">Close</button>
+    </div>
+
+    <!-- Modal Box for Khan Market -->
+    <div id="khanMarketBox" class="box">
+      <h2>Khan Market</h2>
+      <br>
+      <p>Khan Market is an upscale shopping and food hub located in central Delhi. This U-shaped market contains narrow
+        lanes packed with luxury brand stores, chic boutiques, renowned restaurants and lively cafes. Shop for designer
+        clothing, bespoke jewellery, shoes, books, and housewares from brands and more. Stop for a indulgent brunch or
+        coffee break at buzzing spots like Big Chill Cafe, Town Hall, or The All American Diner. Khan Market has a
+        sophisticated vibe and is a favourite among Delhi's elite and expat crowds for a day of leisurely shopping and
+        dining.</p><br>
+      <ul>
+        <li><strong>Location:</strong> Central Delhi, New Delhi</li>
+        <li><strong>Opening Hours:</strong> 10:00 am to 11:00 pm.</li>
+
+      </ul>
+      <button class="close-btn" onclick="closeBox('khanMarketBox')">Close</button>
+    </div>
+
+    <!-- Modal Box for Gaffar Market -->
+    <div id="gaffarMarketBox" class="box">
+      <h2>Gaffar Market</h2><br>
+      <p>In the Karol Bagh neighbourhood of Delhi, Gaffar Market offers bustling old-school bazaars spread across a grid
+        of streets. It's renowned as a leading destination for women's clothing, with over 5000 shops selling suits,
+        saris, lehengas, accessories and more at wholesale rates. Bargain hard as you browse sparkling chaniya cholis,
+        embroidered fabrics and trendy dresses.
+
+        Gaffar Market is also famous for its delectable street food stalls dishing out snacks like chole bhature,
+        golgappas, and chaat. Take a break from shopping to dig into piping hot samosas, kachoris and South Indian fare.
+        With its crowded lanes and jostling shoppers, Gaffar Market gives a taste of traditional Indian bazaars. Don't
+        forget to hone those negotiation skills!</p>
+      <br>
+      <ul>
+        <li><strong>Location:</strong> Near Karol Bagh</li>
+        <li><strong>Opening Hours:</strong> 10:00 am to 9:00 pm.</li>
+
+      </ul>
+      <button class="close-btn" onclick="closeBox('gaffarMarketBox')">Close</button>
+    </div>
+
+    <!-- Modal Box for Palika Market -->
+    <div id="palikaMarketBox" class="box">
+      <h2>Palika Market</h2><br>
+      <p>Located beneath Connaught Place, Palika Bazaar is a shopping hub offering affordable clothing, accessories,
+        electronics and knick-knacks. The air-conditioned bazaar spans over 1 km across various blocks labelled A to L.
+        Comb through mounds of merchandise to find great deals on bags, watches, clothing, homewares, and mobile
+        accessories.
+
+        When you need a break from shopping, head up to the Courtyard to sample street food favourites like chole
+        bhature, pani puri, and kebabs from the food stalls. With shops staying open until late, Palika Bazaar is
+        popular for getting great bargain buys conveniently under one subterranean roof.</p><br>
+      <ul>
+        <li><strong>Location:</strong> Near Karol Bagh</li>
+        <li><strong>Opening Hours:</strong> 10:00 am to 9:00 pm.</li>
+
+      </ul>
+      <button class="close-btn" onclick="closeBox('palikaMarketBox')">Close</button>
+    </div>
+
+    <!-- Modal Box for Mehar Chand Market -->
+    <div id="MeherChandBox" class="box">
+      <h2>Mehar Chand Market</h2><br>
+      <p>Tucked away in a residential neighbourhood of New Delhi, Mehar Chand Market is home to exclusive designer
+        boutiques and jewellery stores frequented by Delhi's elite. The narrow lanes here are ideal for leisurely
+        strolling and window shopping in the latest Indian high fashion. Look for couture creations by JJ Valaya, Ashish
+        N Soni, and Tarun Tahiliani, along with extravagant diamond and gemstone jewellery.
+
+        Mehar Chand Market also offers custom tailoring, exotic home decor items, and exquisite handicrafts. While the
+        prices are sky-high, the people watching and window shopping can't be beat. Treat yourself to a buffet lunch at
+        the iconic Eau de Monsoon restaurant after working up an appetite.</p><br>
+      <ul>
+        <li><strong>Location:</strong> Near Karol Bagh</li>
+        <li><strong>Opening Hours:</strong> 10:00 am to 9:00 pm.</li>
+
+      </ul>
+      <button class="close-btn" onclick="closeBox('MeherChandBox')">Close</button>
+    </div>
+    <!-- Modal Box for Mehar Chand Market -->
+    <div id="MeenaBazaarBox" class="box">
+      <h2>Mehar Chand Market</h2><br>
+      <p>Nestled between Dariba Kalan and Jama Masjid is Meena Bazaar, one of the most ancient markets of the city. Also
+        known as Chatta Chowk Bazaar, the corridors of this place transport you to the Mughal era Delhi. Retaining the
+        Islamic touch, most shops here sell traditional Muslim garments like the burqas (veils donned by Muslim ladies),
+        traditional embroidered caps for men and pictures of Islamic religious sites.
+
+        Maintained by the Archaeological Survey of India (ASI), this age-old marketplace has some shops selling wedding
+        attires, colourful blankets, shawls and even diaries. A big attraction for tourists are the intricate Mughal era
+        carvings that are still visible on some of its oldest buildings.</p><br>
+      <ul>
+        <li><strong>Location:</strong> Near Karol Bagh</li>
+        <li><strong>Opening Hours:</strong> 10:00 am to 9:00 pm.</li>
+
+      </ul>
+      <button class="close-btn" onclick="closeBox('MeenaBazaarBox')">Close</button>
+    </div>
+    <!-- Modal Box for Chor Bazaar -->
+    <div id="chorbazaarBox" class="box">
+      <h2>Chor Bazaar</h2><br>
+      <p>If you're a treasure hunter or simply fascinated by unique finds, Chor Bazaar in Delhi is a must-visit destination. This bustling marketplace, known for its eclectic collection of antiques, vintage items, and quirky discoveries, offers an unforgettable shopping experience. Let's delve into the details about Chor Bazaar Delhi, including its operating hours, location, how to reach it, specialties, and more. </p><br>
+      <ul>
+        <li><strong>Location:</strong> Near Karol Bagh</li>
+        <li><strong>Opening Hours:</strong> 10:00 am to 9:00 pm.</li>
+
+      </ul>
+      <button class="close-btn" onclick="closeBox('chorbazaarBox')">Close</button>
+    </div>
+
+    <!-- Modal Box for Paharganj -->
+    <div id="paharganjBox" class="box">
+      <h2>Paharganj</h2><br>
+      <p>As you step out of the New Delhi Railway Station and cross the road, you stand at the entrance of Paharganj Main Bazaar. Stretching for about a kilometre, it is a bargainer's paradise. Chaotic, noisy and dirty, the market is only for shoppers who are rough and tough.
+
+        The whole Main Bazaar is lined with shops full to the brim with books, music, jewellery, bags, clothes, shoes, incense, textiles, wooden statues, and handicrafts. Shanti Handloom and other textile shops offer bags, bed spreads, cushion covers, wall hangings, etc. The jewellery shops sell handmade beaded necklaces and bangles in every shape, size and colour. Carved wooden statues of gods and goddesses, brass wares and decorations are available among handicrafts. Prayer Incense Worldwide specializes in incense sticks, incense cones and Indian tea. Even books, both new and second-hand, are available.</p><br>
+      <ul>
+        <li><strong>Location:</strong> Near Karol Bagh</li>
+        <li><strong>Opening Hours:</strong> 10:00 am to 9:00 pm.</li>
+      </ul>
+      <button class="close-btn" onclick="closeBox('paharganjBox')">Close</button>
+    </div>
+    <!-- Overlay background -->
+    <div id="overlay" class="overlay" onclick="closeBox()"></div>
+  </div>
+
+  <div>
+  </div>
+  <!-- youtube vides\os -->
+  <h1 class="name">Youtube Videos</h1>
+  <div class="slider-container">
+    <div class="slider">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/nSeXlrRLZSQ?si=k1bkWnRO854L7atQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/f-b-DiK1dRM?si=sIRlxczuShS5KeVh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/l85ITtWtjEw?si=YeaAXX5I5QCrZ2kn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/TMg9Rf1D5yM?si=9XmNoLNVLK6_KBJr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jcq8lhW_Wig?si=Aydb-chVqDlgviei" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/LWL23IIYpmQ?si=TcV7_gLnLL02cVyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="controls">
+      <button id="prev">❮</button>
+      <button id="next">❯</button>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <!-- FAQS -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>FAQs</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="faq-container">
+      <h1 class="name">Frequently Asked Questions</h1><br>
+      <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer(0)">
+              <h3>1. What are the best shopping markets in Delhi?</h3>
+          </div>
+          <div class="faq-answer" id="answer-0">
+              <p>Some of the most popular shopping markets in Delhi include Chandni Chowk, Connaught Place, Sarojini Nagar, and Dilli Haat.</p>
+          </div>
+      </div>
+      <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer(1)">
+              <h3>2. Where can I find budget-friendly shopping in Delhi?</h3>
+          </div>
+          <div class="faq-answer" id="answer-1">
+              <p>For budget-friendly shopping, you can visit Sarojini Nagar Market, Janpath Market, or Lajpat Nagar Market, which offer a variety of affordable clothing, accessories, and more.</p>
+          </div>
+      </div>
+      <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer(2)">
+              <h3>3. What are the must-buy items in Delhi's markets?</h3>
+          </div>
+          <div class="faq-answer" id="answer-2">
+              <p>Must-buy items include traditional wear, jewellery, handicrafts, antiques, street food, and souvenirs from markets like Chandni Chowk and Dilli Haat.</p>
+          </div>
+      </div>
+      <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer(3)">
+              <h3>4. Are the Delhi shopping markets safe for tourists?</h3>
+          </div>
+          <div class="faq-answer" id="answer-3">
+              <p>Yes, most markets are safe for tourists, but like any busy place, it's recommended to stay cautious with your belongings and avoid overly crowded areas during peak hours.</p>
+          </div>
+      </div>
+      <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer(4)">
+              <h3>5. What is the best time to visit Delhi’s shopping markets?</h3>
+          </div>
+          <div class="faq-answer" id="answer-4">
+              <p>The best time to visit is early morning or late evening to avoid the heavy crowd and enjoy cooler weather, especially in markets like Sarojini Nagar and Chandni Chowk.</p>
+          </div>
+      </div>
+  </div>
+  <br><br>
+
+  <!-- footer -->
+  <footer class="footer-section">
+    <div class="footer-item-container">
+      <div class="community-details">
+        <div class="community-name">
+          APNA<strong class="community">DELHI</strong>
+        </div>
+        <div class="about">
+
+          <p class="para">
+            Apna Delhi is a comprehensive online platform offering a directory of local services, businesses, events,
+            and places in Delhi. It provides users with information on restaurants, shopping, healthcare, entertainment,
+            and more, along with reviews, an interactive map, and event listings to explore the city's offerings.
+          </p>
+        </div>
+      </div>
+      <div class="category-container">
+        <div class="category-section">
+          <span class="item-heading">Links</span>
+          <div class="items">
+            <a href="market.html">Market</a>
+            <br />
+            <a href="parks-and-garden.html">Parks & Garden</a>
+            <br />
+            <a href="temple.html">Temple</a>
+            <br />
+            <a href="museum.html">Museum</a>
+            <br />
+            <a href="food.html">Food</a>
+            <br />
+            <a href="malls.html">Malls</a>
+            <br />
+        </div>
+        
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    </div>
+    </div><br>
+    <div class="social-links">
+      <div class="all-links">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-facebook"
+          viewBox="0 0 16 16">
+          <path
+            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-instagram"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-github"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-linkedin"
+          viewBox="0 0 16 16">
+          <path
+            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-twitter"
+          viewBox="0 0 16 16">
+          <path
+            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+        </svg>
+      </div>
+    </div>
+    <div class="copyright">Copyright &#169; 2024 @apnadelhi.</div>
+  </footer>
+
+
+  <script>
+    // Function to show the box based on card clicked
+    function showBox(boxId) {
+      document.getElementById(boxId).style.display = "block";
+      document.getElementById("overlay").style.display = "block";
+    }
+
+    // Function to close the box
+    function closeBox(boxId) {
+      if (boxId) {
+        document.getElementById(boxId).style.display = "none";
+      }
+      document.getElementById("overlay").style.display = "none";
+    }
+    function toggleModal() {
+      const modal = document.getElementById('infoModal');
+      modal.style.display = (modal.style.display === 'none' || modal.style.display === '') ? 'flex' : 'none';
+    }
+
+    // Close modal when clicking outside content area
+    window.onclick = function (event) {
+      const modal = document.getElementById('infoModal');
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    }
+
+    const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-link").forEach((n) => {
+  n.addEventListener("click", () => {
+    hamburger.classList.remove(".active");
+    navMenu.classList.remove("active");
+  });
+});
+</script>
+<script>
+  let currentIndex = 0;
+  const slider = document.querySelector('.slider');
+  const iframes = document.querySelectorAll('iframe');
+  const totalVideos = iframes.length;
+
+  document.getElementById('next').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalVideos;  // Loop to the first video after the last one
+    updateSlider();
+  });
+
+  document.getElementById('prev').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalVideos) % totalVideos;  // Loop to the last video before the first one
+    updateSlider();
+  });
+
+  function updateSlider() {
+    const offset = -currentIndex * 560; // Width of one video (same as iframe width)
+    slider.style.transform = `translateX(${offset}px)`;
+  }
+</script>
+<script>
+ function toggleAnswer(index) {
+    const allAnswers = document.querySelectorAll('.faq-answer');
+
+    // Close all answers
+    allAnswers.forEach((answer, idx) => {
+        if (idx !== index) {
+            answer.style.display = 'none';
+        }
+    });
+
+    const answerElement = document.getElementById(`answer-${index}`);
+
+    // Toggle the current answer
+    if (answerElement.style.display === 'block') {
+        answerElement.style.display = 'none';
+    } else {
+        answerElement.style.display = 'block';
+    }
+}
+
+
+</script>
+</body>
+</html>

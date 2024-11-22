@@ -1,0 +1,194 @@
+.banner-card{
+    position: relative;
+}
+
+.banner-card img{
+    width: 100vw;
+    height: auto;
+    max-height: 70vh;
+    object-fit: cover;
+}
+
+.banner-text{
+    position: absolute;
+    top: 25%;
+    color: black;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.banner-text h1{
+    font-size: 45px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.banner-text p{
+    font-family: sans-serif;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background-color: white;
+}
+#div1{
+    height: 500px;
+    width: 630px;
+    background: beige;
+    margin: 20px;
+    padding-left: 4%;
+    padding-top: 3%;
+}
+#div2{
+    height: 500px;
+    width: 630px;
+    background: beige;
+    margin: 20px;
+    padding-left: 4%;
+    padding-top: 3%;
+    padding-right: 4%;
+    display: flex;
+    flex-direction: column;
+}
+#div3{
+    height: 100px;
+    width: 700px;
+    margin: 20px;
+    align-content: center;
+    align-items: center;
+}
+
+.DIV1 p{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Adjust alignment as needed */
+    margin-bottom: 15px; /* Adjust spacing between input groups */
+}
+
+.input-field {
+    flex: 1;
+    margin-right: 40px; /* Adjust spacing between input fields */
+}
+
+.phone-input-container {
+    position: relative;
+  }
+  
+.phone-input {
+    padding-left: 58px; 
+    background-image: url('Images/IndiaFlag.png'); 
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: 20px 15px; 
+    padding-right: 40px; 
+    border: 1px solid gray; 
+    font-weight: normal;
+  }
+
+.prefix {
+    position: absolute;
+    left:30px; 
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+label{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+label[for="message"]{
+    margin-bottom: 0px;
+}
+#fname{
+    width: 210px;
+    height: 25px;
+    font-size: 15px;
+}
+#phone{
+    width: 130px;
+    height: 25px;
+    font-size: 15px;
+}
+#email{
+    width: 340px;
+    height: 25px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#message{
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-top: 5px;
+}
+input[type="submit"]{
+    background-color: #c11616;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 80px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    transform: scale(1.05);
+}
+
+.contact-label{
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.contact-info img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.contact-info a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.image-link {
+margin-right: 30px; 
+}
+.image-link:nth-child(2) img {
+    padding-bottom: 10px;
+}
+.image-link:nth-child(4) img {
+    padding-bottom: 6px;
+}
+.image-link:nth-child(5) img {
+    padding-bottom: 8px;
+}
