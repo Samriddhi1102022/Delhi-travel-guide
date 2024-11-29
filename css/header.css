@@ -33,11 +33,11 @@
     display: center;
     justify-content: center;
     align-items: center;
-    height: 120vh;
+    /* height: 120vh; */
     margin: 0;
     text-align: center;
     padding: 50px;
-    
+    /* padding-bottom: 0; */
   }
   
   .container {
