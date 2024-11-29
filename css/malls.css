@@ -1,6 +1,7 @@
 .top{
-    background-image: url('https://th.bing.com/th/id/OIP.i9GCpDG8tRUvxiuJGCMH0QHaEo?rs=1&pid=ImgDetMain');
+    /* background-image: url('https://th.bing.com/th/id/OIP.i9GCpDG8tRUvxiuJGCMH0QHaEo?rs=1&pid=ImgDetMain'); */
     padding: 15px;
+    background-color: rgb(181, 35, 35);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,7 +15,9 @@
     top: 50%;
     left: 50%;
     text-align: center;
-
+}
+.top h1 {
+    margin-top: 80px;
 }
 
 .py{
