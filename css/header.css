@@ -52,8 +52,9 @@
           
   .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px; /* Slightly reduced gap between cards */
+    
   }
   
   .different {
@@ -63,11 +64,12 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     text-align: center;
-    width: 300px; /* Slightly reduced width */
+    width: 500px; /* Slightly reduced width */
     height: 300px; /* Slightly reduced height */
     box-align: center;
     display: center;
     justify-content: center;
+    justify-self: center;
     left: 15%;
   }
   
