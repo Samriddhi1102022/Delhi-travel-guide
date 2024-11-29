@@ -16,14 +16,13 @@
   }
   
   .skyline{
-    background-image: url("https://static.vecteezy.com/system/resources/previews/015/708/327/non_2x/delhi-india-city-skyline-golden-silhouette-vector.jpg");
+    background-image: url("https://www.ilamed.org/wp-content/uploads/2022/12/delhi-img1-ilamed-2022.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 40vh;
+    height: 60vh;
     color: white;
     padding:180px;
-  
   }
   
   .explore{
