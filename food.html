@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="./css/nav-footer-style.css">
+    <title>Food_Page</title>
+    <style>
+
+         /* Button styles */
+         .popup-btn {
+            padding: 10px 20px;
+            background-color:rgb(167, 7, 7);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Popup container styles */
+        .popup-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            padding: 20px;
+            background-color:white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            z-index: 1000;
+            border: 2px groove red;
+        }
+
+        /* Close button styles */
+        .close-btn {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        /* Background overlay */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        #sliders{
+          height: 450px;
+          width: 98%;
+          object-fit: cover;
+        }
+        #D1{
+          height: 250px;
+          width: 350px;
+          object-fit: cover;
+          margin-left: 5px;
+        }
+
+        pre{
+          /* font-family: Segoe UI',Tahoma, Geneva, Verdana, sans-serif; */
+          font-size:15px;
+        }
+        
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+  <script>
+    // Function to show the popup
+    function showPopup() {
+        document.getElementById("popup").style.display = "block";
+        document.getElementById("overlay").style.display = "block";
+    }
+
+    // Function to close the popup
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("overlay").style.display = "none";
+    }
+</script>
+<header>
+  <a href="index.html" class="logo "><span>Apna</span>Delhi</a>
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="market.html">MARKET</a></li>
+      <li class="nav-item"><a href="parks.html">PARKS & GARDENS</a></li>
+      <!-- <li class="nav-item"><a href="temple.html">TEMPLE</a></li>
+      <li class="nav-item"><a href="museum.html">MUSEUM</a></li> -->
+      <li class="nav-item"><a href="converter.html">CURRENCY CONVERTER</a></li>
+      <li class="nav-item"><a href="food.html"class="logo active">FOOD</a></li>
+      <li class="nav-item"><a href="malls.html">MALLS</a></li>
+      <li class="nav-item"><a href="contact.html" >CONTACT US</a></li>
+    </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+</header>
+<img src="images/park&food_img/MARKETS TO EXPLORE (2).png" style="height: 250px; width: 100%; ">
+<br><br>
+<hr>
+    <!-- card ----1 -->
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card h-60">
+                    <img  id= "D1" src="https://media.istockphoto.com/id/2166139097/photo/chole-bhature-is-a-famous-north-indian-food-dish.jpg?s=612x612&w=0&k=20&c=8u8CSxWjyDAulw6CphVR8mG0XywdhaFp3HQZIDZ8ZAI=" class="card-img-top" alt="..." >
+                    <div class="card-body">
+                      <p class="card-title" style="text-align:center;font-size: 20px;"><u><b >Chole Bhature</b></u></p>
+                      <!-- <p class="card-body"> -->
+                        <p class="card-body" style="text-align: center; font-size: 20px; "><a href="https://www.google.com/maps/search/chole+bhature+famous+in+delhi+map/@28.6588726,77.1981188,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D">LOCATION/MAP</a></p>
+<p style="font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; justify-content:left;">Chole Bhature is one of Delhi's most beloved dishes, offering a perfect combination of spicy chickpea curry (chole) and fluffy, deep-fried bread (bhature). Whether you're a local or a visitor, tasting this dish in Delhi is a must!</p>
+                    </div>
+                    <button class="popup-btn" onclick="showPopup()">Click Me</button>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="popup-container" id="popup">
+                        <h3 style="font-size: 40px; text-decoration: underline; color: #dc3545;">Chole Bhature</h3>
+                        <!-- +++++++++++++++++++++++++++++++++++++++ -->
+                        <p>Chole Bhature is famous in Delhi because it perfectly represents the city's vibrant and diverse food culture. It is a flavorful, indulgent, and hearty dish made of spicy chickpeas (chole) paired with deep-fried, fluffy bread (bhature). Its popularity stems from several factors:<br>
+
+                        <b>Why Chole Bhature is Famous in Delhi:</b><br>
+                        Cultural Staple: It’s a quintessential North Indian dish that has become synonymous with Delhi's street food scene.
+                        Rich Flavor: The use of aromatic spices and tangy flavors makes it a crowd favorite.
+                        Perfect Comfort Food: The combination is filling, affordable, and satisfying, making it a go-to choice for locals and tourists.
+                        Street Food Legacy: Many iconic eateries have perfected their recipes over decades, adding to its fame.
+                        Versatility: Chole Bhature is enjoyed as breakfast, lunch, or even a snack, making it accessible throughout the day.<br>
+                          <b>Where to Find the Best Chole Bhature in Delhi:
+                          </b><br>
+                        Here are some of the best spots to try:<br>
+                        
+                        Sitaram Diwan Chand (Paharganj)
+                        
+                        Known for its legendary taste, their Chole Bhature is served with a tangy pickle and a unique paneer-stuffed bhatura.<br>
+                        Baba Nagpal Corner (Lajpat Nagar)
+                        
+                        Famous for its spicy chole and soft bhature, this place attracts food lovers from across the city.<br>
+                        Chache Di Hatti (Kamla Nagar)
+                        
+                        A hotspot among Delhi University students, their Chole Bhature has a distinct, unforgettable flavor.<br>
+                        Kwality Restaurant (Connaught Place)
+                        
+                        A more upscale option with authentic and consistent flavors, perfect for dining with family.<br>
+                        Nand Di Hatti (Sadar Bazaar)
+                        
+                        They serve pure desi ghee bhature with flavorful chole, making it a treat for food enthusiasts.<br>
+                        Om Corner (Karol Bagh)
+                        
+                        Their generously served portions and rich spices make it a must-try for chole bhature fans.<br>
+
+                        <button class="close-btn" onclick="closePopup()">Close</button>
+                    </div>
+                  </div>
+                </div>
+<!-- CARD-2 -->
+                <div class="col">
+                  <div class="card h-58">
+                    <img  id= "D1" src="https://media.istockphoto.com/id/1072951674/photo/indian-chilli-chicken-dry-served-in-a-plate-over-moody-background-selective-focus.webp?a=1&b=1&s=612x612&w=0&k=20&c=uiKFoe1pDjZWzJtsbJZn1i2_aWHjYWuKuVt6l7ldQ5U=">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align:center; font-size: 20px;"><u><b >Butter Chicken</b></u> </h5>
+                      <h3 style="font-size: 20px; text-align: center;"><a href="https://www.google.com/maps/search/butter+chicken+map/@28.658892,77.2276224,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D">LOCATION/MAP</a></h3>
+                      <p class="card-text">Butter Chicken, one of Delhi's most iconic dishes, holds a special place in Indian cuisine. Originating in Delhi, it combines rich, creamy, and mildly spiced tomato-based gravy with succulent pieces of tandoori chicken. Here’s why it’s so beloved and where you can find the best Butter Chicken in Delhi.
+                      </p>
+                    </div>
+                    <br>
+                    <script>
+                      // Function to show the popup
+                      function showPopup1() {
+                          document.getElementById("popup1").style.display = "block";
+                          document.getElementById("overlay1").style.display = "block";
+                      }
+                  
+                      // Function to close the popup
+                      function closePopup1() {
+                          document.getElementById("popup1").style.display = "none";
+                          document.getElementById("overlay1").style.display = "none";
+                      }
+                  </script>
+                    <button class="popup-btn" onclick="showPopup1()">Click Me</button>
+
+                    <div class="overlay1" id="overlay1"></div>
+                
+                    <div class="popup-container" id="popup1">
+                        <h3  style="font-size: 30px; text-decoration: underline; color: #dc3545;">Butter Chicken</h3>
+                      
+                        <p>
+                          <b>Why Butter Chicken is Famous in Delhi</b><br>
+Birthplace of Butter Chicken: The dish was invented at Moti Mahal in Daryaganj during the 1950s by Kundan Lal Gujral, blending tandoori chicken with leftover tomato gravy and butter.
+Universal Appeal: Its mildly spiced, creamy flavor is loved by locals and international food lovers alike.
+Perfect Pairing: Butter Chicken tastes amazing with naan, roti, or even steamed rice, making it a versatile dish.
+Heritage of Mughlai Cuisine: Butter Chicken reflects the richness of Delhi’s Mughlai culinary traditions.<br>
+<b>Best Places for Butter Chicken in Delhi</b><br>
+1. Moti Mahal (Daryaganj)
+Highlight: The birthplace of Butter Chicken, serving the original recipe with a legacy of flavor.
+Must Try With: Butter naan or roomali roti.
+2. Kake Da Hotel (Connaught Place)
+Highlight: An old-school eatery offering rich and flavorful Butter Chicken at pocket-friendly prices.
+Atmosphere: Casual and bustling.
+3. Gulati Restaurant (Pandara Road)
+Highlight: Known for its refined, creamy Butter Chicken served in a family-friendly ambiance.
+Add-ons: Pair with garlic naan or biryani.
+4. Havemore (Pandara Road)
+Highlight: Another Pandara Road gem, famous for its tender chicken and indulgent gravy.
+Perfect Combo: Try with butter naan and green chutney.
+5. Rajinder Da Dhaba (Safdarjung Enclave)
+Highlight: A roadside spot turned iconic for its mouthwatering Butter Chicken, blending authentic flavors with street vibes.
+Pro Tip: Enjoy it in the car for a true Delhi experience.
+6. Bhape Da Hotel (Rajouri Garden)
+Highlight: Known for a Punjabi-style rich, buttery curry with smoky tandoori chicken pieces.
+Specialty: Hearty portions and bold flavors.
+7. Mini Mughal (Defence Colony)
+Highlight: A modern take on traditional Butter Chicken with impeccable taste.
+Best Accompaniment: Their laccha parathas.
+8. Aslam Chicken Corner (Jama Masjid)
+Highlight: While famous for its butter-infused chicken, they also serve an unforgettable Butter Chicken with a smoky twist.
+Experience: Relish it amidst the vibrant lanes of Old Delhi.
+                        </p>
+                        <button class="close-btn" onclick="closePopup1()">Close</button>
+                    </div>
+                  </div>
+                </div>
+<!-- CARD-3 -->
+                <div class="col">
+                  <div class="card h-60">
+                    <img  id= "D1" src="https://media.istockphoto.com/id/1222358291/photo/tasty-potato-parathas-with-curd-and-tea-indian-breakfast.jpg?s=612x612&w=0&k=20&c=xplLWvofRTRRr2UpfUNIaTAGk4tiX8W_s1XjH3lKiYA=">
+                    <div class="card-body">
+                      
+                      <h5 class="card-title" style="text-align:center; font-size: 20px;"><u><b >Parathas</b></u> </h5>
+                      <h3 style="font-size: 20px; text-align: center;"><a href="https://www.google.com/maps/search/butter+chicken+map/@28.658892,77.2276224,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D">LOCATION/MAP</a></h3>
+
+                      <p class="card-text">Parathas are a quintessential part of Delhi’s food culture, loved for their versatility, rich flavors, and comforting appeal. They can be stuffed with a variety of fillings or served plain, making them a staple for breakfast, lunch, or even a quick snack. Here's why parathas are so iconic in Delhi and where you can find the best ones.</p>
+                    </div>
+                    <script>
+                      // Function to show the popup
+                      function showPopup2() {
+                          document.getElementById("popup2").style.display = "block";
+                          document.getElementById("overlay2").style.display = "block";
+                      }
+                  
+                      // Function to close the popup
+                      function closePopup2() {
+                          document.getElementById("popup2").style.display = "none";
+                          document.getElementById("overlay2").style.display = "none";
+                      }
+                  </script>
+                    <button class="popup-btn" onclick="showPopup2()">Click Me</button>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="popup-container" id="popup2">
+                        <h3>Parathas</h3>
+                        <b>Why Parathas Are Famous in Delhi</b><br>
+                        <b>Historical Legacy:</b> Delhi has been a hub for North Indian cuisine for centuries, and parathas are a staple.<br>
+                        <b>Street Food Culture</b>: Affordable, flavorful, and filling, parathas are a favorite among locals and tourists alike.<br>
+                        <b>Variety</b>: From classic aloo (potato) and gobi (cauliflower) to innovative fillings like paneer tikka and keema, Delhi offers endless options.<br>
+                        <b>Comfort Food</b>: Parathas are versatile and pair well with curd, pickles, chutneys, and butter—making them an indulgent treat.<br>
+                        <b>Famous Places to Try Parathas in Delhi</b><br>
+                        Paranthe Wali Gali, Chandni Chowk<br>
+                        
+                        Why Go? The most iconic spot for parathas in Delhi.
+                        Specialty: Deep-fried parathas with fillings like aloo, gobi, paneer, banana, rabri, and more.
+                        Pro Tip: Pair it with their tangy pickles and chutneys.
+                        Moolchand Paratha, Moolchand Metro Station
+                        
+                        Why Go? Famous for its late-night crowd and buttery parathas.<br>
+                        Specialty: Egg paratha and chicken keema paratha.
+                        Pro Tip: Best enjoyed with their mint chutney and chilled buttermilk.
+                        Kake Di Hatti, Chandni Chowk
+                        
+                        Why Go? Known for massive, indulgent parathas.<br>
+                        Specialty: Paneer paratha and aloo-pyaaz paratha.
+                        Pro Tip: Pair with their signature lassi.
+                        Not Just Paranthas, Rajouri Garden
+                        
+                        Why Go? A modern twist on traditional parathas.<br>
+                        Specialty: Rumali-style parathas and parathas stuffed with exotic fillings like mozzarella or mushrooms.
+                        Ambiance: A cozy family dining experience.<br>
+                        <button class="close-btn" onclick="closePopup2()">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div><br>
+<!-- ======================================= -->
+ <!-- CADRS MORE -->
+  <!-- card ----4 -->
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-60">
+            <img id= "D1"  src="https://media.istockphoto.com/id/1353022622/photo/aloo-tikki-chaat-famous-street-food-of-india.jpg?s=612x612&w=0&k=20&c=VqSYbP2wTfmaPmvOyuLESjA3UJIdjgy47Ic4P5CUR-s=">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center; text-decoration: underline;">Aloo Tikki and Chaat</h5>
+              <h3 style="font-size: 20px; text-align: center;"><a href="https://www.google.com/maps/search/butter+chicken+map/@28.658892,77.2276224,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D">LOCATION/MAP</a></h3>
+
+              <p class="card-body"><p style="font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Spicy and tangy, Delhi’s street chaat like aloo tikki, golgappa, and papri chaat is a sensory delight. Head to UPSC Chaat Wala or Chandni Chowk for authentic flavors.</p><br>
+            </div>
+            <script>
+              // Function to show the popup
+              function showPopup4() {
+                  document.getElementById("popup4").style.display = "block";
+                  document.getElementById("overlay4").style.display = "block";
+              }
+          
+              // Function to close the popup
+              function closePopup4() {
+                  document.getElementById("popup4").style.display = "none";
+                  document.getElementById("overlay4").style.display = "none";
+              }
+          </script>
+            <button class="popup-btn" onclick="showPopup4()">Click Me</button>
+
+            <div class="overlay" id="overlay"></div>
+        
+            <div class="popup-container" id="popup4">
+                <h3 style="color: #dc3545; text-decoration: underline;">Aloo Tikki and Chaat </h3>
+                <p>
+                  <b>Why Aloo Tikki and Chaat are Famous in Delhi</b><br>
+Street Food Capital: Delhi's street food culture is unparalleled, and aloo tikki and chaat are at its heart.<br>
+Authentic Flavors: The city's recipes use traditional spices, chutneys, and techniques passed down through generations.<br>
+Variety: From classic aloo tikki chaat to modern fusions, Delhi’s food stalls and restaurants offer endless options.<br>
+Affordability: Delicious and budget-friendly, these snacks are accessible to everyone.<br>
+
+<b>Famous Places to Try Aloo Tikki and Chaat in Delhi</b><br>
+Natraj Dahi Bhalla, Chandni Chowk<br>
+
+Why Go? A legendary spot serving tangy and creamy dahi-based chaat.
+Specialty: Crispy aloo tikki topped with curd, chutneys, and spices.
+<b>Prabhu Chaat Bhandar, Khan Market</b><br>
+
+Why Go? Popular among foodies for its high-quality chaat.
+Specialty: Aloo tikki with a generous topping of mint chutney and tamarind chutney.<br>
+<b>Bishan Swaroop, Chandni Chowk</b><br>
+
+Why Go? A hidden gem for authentic street-style aloo tikki.
+Specialty: Crispy tikki served with unique chutney blends.<br>
+<b>UPS Bhavan Chaat Wala, Barakhamba Road</b><br>
+
+Why Go? A famous roadside vendor offering spicy and flavorful aloo tikki.
+Specialty: Tikki with a smoky, spicy touch.<br>
+<b>Shree Balaji Chaat Bhandar, Chandni Chowk</b><br>
+
+Why Go? Known for its zesty chaat preparations.
+Specialty: Aloo tikki paired with chole (spiced chickpeas) and topped with tangy chutneys.<br>
+<b>Bittoo Tikki Wala (BTW), Multiple Outlets</b><br>
+
+Why Go? A popular chain that has redefined traditional aloo tikki with a modern touch.
+Specialty: Loaded tikki chaat with curd, pomegranate, and sev.<br>
+                </p>
+                <button class="close-btn" onclick="closePopup4()">Close</button>
+            </div>
+          </div>
+        </div>
+<!-- CARD-5-->
+        <div class="col">
+          <div class="card h-60">
+            <img  id= "D1" src="https://media.istockphoto.com/id/1135994649/photo/chicken-seekh-kababs-are-being-prepared-road-side.jpg?s=612x612&w=0&k=20&c=3oDpd2gSWTx9Mk2t4ouiA3vLk9hgWjbS3AT0P1rBjOM=">
+            <div class="card-body">
+              <!-- <h5 class="card-title">CENTRAL PARK</h5> -->
+              <p class="card-text">
+                <h5 class="card-title" style="text-align: center; text-decoration: underline;">Kebabs</h5>
+                <h3 style="font-size: 20px; text-align: center;"><a href="https://www.google.com/maps/search/butter+chicken+map/@28.658892,77.2276224,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D">LOCATION/MAP</a></h3>
+
+                <p class="card-body"><p style="font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Juicy and flavorful, kebabs like galouti, seekh, and kakori are must-tries. Karim’s in Jama Masjid and Khan Chacha in Khan Market are iconic spots.</p>
+            </div>
+            <script>
+              // Function to show the popup
+              function showPopup5() {
+                  document.getElementById("popup5").style.display = "block";
+                  document.getElementById("overlay5").style.display = "block";
+              }
+          
+              // Function to close the popup
+              function closePopup5() {
+                  document.getElementById("popup5").style.display = "none";
+                  document.getElementById("overlay5").style.display = "none";
+              }
+          </script>
+            <button class="popup-btn" onclick="showPopup5()">Click Me</button>
+
+            <div class="overlay5" id="overlay5"></div>
+        
+            <div class="popup-container" id="popup5">
+                <h3 style="color: #dc3545; text-decoration: underline;">Kebabs</h3>
+                <p>Delhi’s kebabs are a testament to its rich Mughal heritage and centuries-old culinary traditions, making the city a haven for kebab lovers. These succulent, flavorful delicacies, made from marinated meat or vegetables and cooked to perfection, are popular for their smoky aroma and melt-in-the-mouth texture. The city’s kebab culture is deeply influenced by Mughlai and Awadhi cuisines, offering a wide range of options such as galouti kebabs, kakori kebabs, seekh kebabs, and shammi kebabs. Their fame stems from the perfect blend of aromatic spices, meticulous cooking techniques, and the availability of both traditional and contemporary styles.
+
+                  When it comes to enjoying kebabs in Delhi, several iconic places come to mind. The legendary Karim’s in Jama Masjid is a must-visit for its authentic Mughlai kebabs, especially the juicy mutton seekh kebabs and tender chicken kebabs. Close by, Al Jawahar is another favorite, offering rich, flavorful kebabs with a traditional touch. For a more modern twist, Khan Chacha in Khan Market serves perfectly grilled kebabs wrapped in soft roomali rotis, making it a hotspot for younger crowds. Ghalib Kabab Corner in Nizamuddin is a hidden gem, famous for its soft and aromatic shammi kebabs. For an upscale dining experience, Bukhara at ITC Maurya serves world-class kebabs, including the iconic tandoori varieties. Delhi's kebab scene also thrives on the streets, with vendors in areas like Zakir Nagar and Chandni Chowk serving smoky, char-grilled delights late into the night.
+                  
+                  The unparalleled taste and variety of kebabs in Delhi have earned them a place in the hearts of food enthusiasts. Whether at a fine-dining restaurant or a bustling street corner, indulging in these flavorful creations is an essential part of exploring Delhi’s culinary heritage.
+                  </p><br>
+                <button class="close-btn" onclick="closePopup5()">Close</button>
+            </div>
+          </div>
+        </div>
+<!-- CARD-6 -->
+        <div class="col">
+          <div class="card h-100">
+            <img  id= "D1" src="https://media.istockphoto.com/id/2167699740/photo/healthy-vegetable-wheat-momo-served-on-plate.jpg?s=612x612&w=0&k=20&c=8NkQSn2FFt_RodeMtv6Ky2PtHKKCk3BqjxixcBbj1vc=">
+            <div class="card-body">
+              <!-- <h5 class="card-title">JAPANSE PARK</h5> -->
+              <p class="card-text">
+                <h5 class="card-title" style="text-align: center; text-decoration: underline;">Momos</h5>
+                <h3 style="font-size: 20px; text-align: center;"><a href="https://www.google.com/maps/search/butter+chicken+map/@28.658892,77.2276224,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D">LOCATION/MAP</a></h3>
+
+              <p class="card-body">
+                <p style="font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-bottom: 0;">Delhi-style momos, especially tandoori ones, have become a street food staple. Look for Dolma Aunty Momos in Lajpat Nagar.</p><br>
+            </div>
+            <script>
+              // Function to show the popup
+              function showPopup6() {
+                  document.getElementById("popup6").style.display = "block";
+                  document.getElementById("overlay6").style.display = "block";
+              }
+          
+              // Function to close the popup
+              function closePopup6() {
+                  document.getElementById("popup6").style.display = "none";
+                  document.getElementById("overlay6").style.display = "none";
+              }
+          </script>
+            <button class="popup-btn" onclick="showPopup6()">Click Me</button>
+            <div class="overlay" id="overlay6"></div>
+            <div class="popup-container" id="popup6">
+                <h3 style="color: #dc3545; text-decoration: underline;">Momos</h3>
+                <p>Momos, the beloved Tibetan-origin dumplings, have become a culinary sensation in Delhi, reflecting the city’s diverse food culture. These bite-sized delights, filled with a variety of ingredients like vegetables, chicken, paneer, or mutton, are served steamed or fried and paired with fiery red chutney and sometimes mayonnaise. The dish gained popularity in Delhi due to its affordability, ease of preparation, and the ability to cater to a wide range of tastes, from mild to intensely spicy. Over the years, Delhi's food enthusiasts have embraced momos, turning them into a quintessential street food item, often reimagined with unique variations like tandoori momos, afghani momos, and even momo burgers.
+
+                  For the best momos in Delhi, Amar Colony Market is a haven, featuring vendors like Hunger Strike, famous for its creamy tandoori momos. In Lajpat Nagar, Dolma Aunty’s Momos has earned legendary status with its simple yet delicious steamed momos. Majnu ka Tila, also known as Delhi’s Little Tibet, offers authentic Tibetan momos served with traditional soup. Those seeking fusion flavors can visit Wow! Momo, a chain offering quirky options like chocolate momos and momo sizzlers. Additionally, street stalls across Kamla Nagar and Satya Niketan serve budget-friendly momos that are a hit among college students.
+                  
+                  The charm of momos lies in their versatility and accessibility, making them a favorite snack for Delhiites. Whether you’re exploring high-end outlets or relishing them from roadside stalls, momos are an irresistible part of Delhi’s vibrant street food culture, offering a burst of flavor in every bite.</p>
+                <button class="close-btn" onclick="closePopup6()">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<br><br><br><br>
+<hr style="height: 2px; color: #000;" >
+<!-- YouTube Video's -->
+
+<h1 style="text-align:center; font-size: 40px; text-decoration: underline; font-weight: bold; color:rgb(170, 28, 28);">"Better Known Through a YouTube Video"</h1><br><br>
+  <div class="container-fluid">
+    <iframe width="400" height="300"  style=" margin-left: 18px; margin-bottom: 5px;" src="https://www.youtube.com/embed/iqHJnjUZDu8?si=POTKnfO9qNXMoTC1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="400" height="300" style=" margin-left: 18px; margin-bottom: 5px;"src="https://www.youtube.com/embed/8xWgyXlo9MI?si=MxHE_fJi1SmDTwtc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="400" height="300"  style=" margin-left: 18px; margin-bottom: 5px;" src="https://www.youtube.com/embed/HZ2Ct7fejy4?si=_SUIJ-vgT-BZTJyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+    <iframe width="400" height="300"  style=" margin-left: 18px; margin-top: 5px;" src="https://www.youtube.com/embed/KsD9txdfSXk?si=I4VrQw0HowsnSNve" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="400" height="300"   style=" margin-left: 18px; margin-top: 5px;" src="https://www.youtube.com/embed/CuBsZuGxPQE?si=al3wryQ8oUjY2aPS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="400" height="300"  style=" margin-left: 18px; margin-top: 5px;" src="https://www.youtube.com/embed/UxSHtN2dZ24?si=scT4YRfMG_2lVBVr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div>
+      </div>
+    </div>
+  <br><br>
+  <hr style="height: 5px; color: #000;">
+  <h1 style="text-align:center; font-size: 40px; text-decoration: underline; font-weight: bold; color:rgb(170, 28, 28);">FAQ's.....?</h1>
+  <br><br>
+  <div class="container" >
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Why is Delhi famous for its street food?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">The influence of Mughal food had the longest influence, so much so that Mughal cuisine and Indian cuisine became synonymous. Due to its vibrant food tradition- both non-vegetarian and vegetarian, delicacies and street food Delhi ranks as the gastronomical of India.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            What food is Delhi known for?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"><pre>
+            Here are famous dishes of Delhi you must try on your next trip to the capital:
+Chhole Bhature.
+Butter Chicken.
+Momo.
+Rolls.
+Kebabs.
+Jalebis.
+Chaat.
+Nihari.
+          </pre></div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Which area is best for food in Delhi?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"><pre>
+            Best Places To Eat In Delhi
+North Campus: Try Diverse And Delicious Food.
+Hudson Lane, GTB Nagar: Amazing Food Within Budget.
+South Campus: A Hub For Wonderful Food.
+Old Delhi: Paradise For Street Food.
+Pandara Road: Provides Excellent Meal.
+NSP: Perfect Mix Of Every Food.
+Jama Masjid: For Non-Veg Food Lovers.
+          </pre>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            What is the food of Delhi culture?
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Apart from the Mughlai cuisine the Delhiites are also ardent fans of Punjabi foods like Butter Chicken, Chole Bhature, Rajma Chawal, Saag and Makai Ki Roti, Tandoori Roti and Tandoori Chicken, etc.
+          </div>
+        </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+            What is the famous sweet of Delhi?
+          </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">What are some of the famous sweets in Delhi? Ladoo, Kesar Jalebi, kheer, and Rasmalai are some of the most famous sweets in Delhi</div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+            What are the main food crops of Delhi?
+          </button>
+        </h2>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Paddy, Jowar and Bajra during Kharif and Wheat and Mustard crops during the Rabi seasons are the major crops in Delhi. The cultivation of vegetables is a continuous process throughout the year</div>
+        </div>
+      </div>
+    </div>
+      </div>
+      </div>
+      </div>
+
+   <!-- footer -->
+   <footer class="footer-section">
+    <div class="footer-item-container">
+      <div class="community-details">
+        <div class="community-name">
+          APNA<strong class="community">DELHI</strong>
+        </div>
+        <div class="about">
+
+          <p class="para">
+            Apna Delhi is a comprehensive online platform offering a directory of local services, businesses, events,
+            and places in Delhi. It provides users with information on restaurants, shopping, healthcare, entertainment,
+            and more, along with reviews, an interactive map, and event listings to explore the city's offerings.
+          </p>
+        </div>
+      </div>
+      <div class="category-container">
+        <div class="category-section">
+          <span class="item-heading">Links</span>
+          <div class="items">
+            <a href="market.html">Market</a>
+            <br />
+            <a href="parks.html">Parks & Garden</a>
+            <br />
+            <!-- <a href="temple.html">Temple</a>
+            <br />
+            <a href="museum.html">Museum</a>
+            <br /> -->
+            <a href="converter.html">Currency Converter</a>
+				<br />
+            <a href="food.html">Food</a>
+            <br />
+            <a href="malls.html">Malls</a>
+            <br />
+        </div>
+        
+          </div>
+        </div>
+
+
+      </div>
+    <br>
+    <div class="social-links">
+      <div class="all-links">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-facebook"
+          viewBox="0 0 16 16">
+          <path
+            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-instagram"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-github"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-linkedin"
+          viewBox="0 0 16 16">
+          <path
+            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-twitter"
+          viewBox="0 0 16 16">
+          <path
+            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+        </svg>
+      </div>
+    </div>
+    <div class="copyright">Copyright &#169; 2024 @apnadelhi.</div>
+  </footer>
+
+</body>
+</html>
